@@ -4,10 +4,10 @@ function compareTrue(param1, param2) {
 }
 compareTrue(true, true);
 // Desafio 2
-// function calcArea(base, height) {
-//   return (base * height) / 2;
-// }
-// calcArea(30, 3);
+function calcArea(base, height) {
+  return (base * height) / 2;
+}
+calcArea(30, 3);
 // // Desafio 3
 // function splitSentence() {
 //   // seu código aqui
@@ -52,7 +52,7 @@ compareTrue(true, true);
 // }
 
 module.exports = {
-  // calcArea,
+  calcArea,
   // catAndMouse,
   compareTrue,
   // concatName,
