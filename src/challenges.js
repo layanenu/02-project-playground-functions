@@ -19,10 +19,13 @@ function concatName(array) {
   let array2 = [last, first];
   return array2.join(', ');
 }
-// // Desafio 5
-// function footballPoints() {
-//   // seu código aqui
-// }
+// Desafio 5
+function footballPoints(wins, ties) {
+  let vitorias = wins * 3;
+  let empates = ties * 1;
+  let calculo = vitorias + empates;
+  return calculo;
+}
 
 // // Desafio 6
 // function highestCount() {
@@ -60,7 +63,7 @@ module.exports = {
   // decode,
   // encode,
   // fizzBuzz,
-  // footballPoints,
+  footballPoints,
   // highestCount,
   splitSentence,
   // techList,
