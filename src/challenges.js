@@ -12,14 +12,13 @@ calcArea(30, 3);
 function splitSentence(string) {
   return string.split(' ');
 }
-
-console.log(splitSentence('Estou fazendo o projeto playground functions'));
-
 // // Desafio 4
-// function concatName() {
-//   // seu código aqui
-// }
-
+function concatName(array) {
+  let first = array[0];
+  let last = array[array.length - 1];
+  let array2 = [last, first];
+  return array2.join(', ');
+}
 // // Desafio 5
 // function footballPoints() {
 //   // seu código aqui
@@ -57,7 +56,7 @@ module.exports = {
   calcArea,
   // catAndMouse,
   compareTrue,
-  // concatName,
+  concatName,
   // decode,
   // encode,
   // fizzBuzz,
