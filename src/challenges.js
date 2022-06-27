@@ -9,9 +9,11 @@ function calcArea(base, height) {
 }
 calcArea(30, 3);
 // // Desafio 3
-// function splitSentence() {
-//   // seu código aqui
-// }
+function splitSentence(string) {
+  return string.split(' ');
+}
+
+console.log(splitSentence('Estou fazendo o projeto playground functions'));
 
 // // Desafio 4
 // function concatName() {
@@ -61,6 +63,6 @@ module.exports = {
   // fizzBuzz,
   // footballPoints,
   // highestCount,
-  // splitSentence,
+  splitSentence,
   // techList,
 };
