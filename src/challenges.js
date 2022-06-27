@@ -2,14 +2,12 @@
 function compareTrue(param1, param2) {
   return (!!param1 && !!param2);
 }
-
 compareTrue(true, true);
-
-// // Desafio 2
-// function calcArea() {
-//   // seu código aqui
+// Desafio 2
+// function calcArea(base, height) {
+//   return (base * height) / 2;
 // }
-
+// calcArea(30, 3);
 // // Desafio 3
 // function splitSentence() {
 //   // seu código aqui
@@ -53,16 +51,16 @@ compareTrue(true, true);
 //   // seu código aqui
 // }
 
-// module.exports = {
-//   calcArea,
-//   catAndMouse,
-//   compareTrue,
-//   concatName,
-//   decode,
-//   encode,
-//   fizzBuzz,
-//   footballPoints,
-//   highestCount,
-//   splitSentence,
-//   techList,
-// };
+module.exports = {
+  // calcArea,
+  // catAndMouse,
+  compareTrue,
+  // concatName,
+  // decode,
+  // encode,
+  // fizzBuzz,
+  // footballPoints,
+  // highestCount,
+  // splitSentence,
+  // techList,
+};
