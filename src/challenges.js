@@ -27,10 +27,16 @@ function footballPoints(wins, ties) {
   return calculo;
 }
 
-// // Desafio 6
-// function highestCount() {
-//   // seu código aqui
-// }
+// Desafio 6
+function highestCount(array) {
+  let maiorNumero = Math.max.apply(null, array);
+  function verificaNumero(numero) {
+    return numero === maiorNumero;
+  }
+  return array.filter(verificaNumero).length;
+}
+
+// console.log(highestCount([2, 3, 4, 76, 55, 9, 76, 76]));
 
 // // Desafio 7
 // function catAndMouse() {
@@ -64,7 +70,7 @@ module.exports = {
   // encode,
   // fizzBuzz,
   footballPoints,
-  // highestCount,
+  highestCount,
   splitSentence,
   // techList,
 };
