@@ -52,10 +52,23 @@ function catAndMouse(mouse, cat1, cat2) {
 
 catAndMouse(0, 3, 1);
 
-// // Desafio 8
-// function fizzBuzz() {
-//   // seu código aqui
-// }
+// Desafio 8
+function fizzBuzz(array) { // recebe um array de numeros e retorna um array de string
+  let novoArray = [];
+  for (let index = 0; index < array.length; index++) {
+    let element = array[index];
+    if (element % 3 === 0 && element % 5 === 0) {
+      novoArray.push('fizzBuzz');
+    } else if (element % 5 === 0) {
+      novoArray.push('buzz');
+    } else if (element % 3 === 0) {
+      novoArray.push('fizz');
+    } else {
+      novoArray.push('bug!');
+    }
+  }
+  return novoArray;
+}
 
 // // Desafio 9
 // function encode() {
@@ -77,7 +90,7 @@ module.exports = {
   concatName,
   // decode,
   // encode,
-  // fizzBuzz,
+  fizzBuzz,
   footballPoints,
   highestCount,
   splitSentence,
