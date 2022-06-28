@@ -36,12 +36,21 @@ function highestCount(array) {
   return array.filter(verificaNumero).length;
 }
 
-// console.log(highestCount([2, 3, 4, 76, 55, 9, 76, 76]));
+// Desafio 7
+function catAndMouse(mouse, cat1, cat2) {
+  let distancia1 = Math.abs(cat1 - mouse);
+  let distancia2 = Math.abs(cat2 - mouse);
 
-// // Desafio 7
-// function catAndMouse() {
-//   // seu código aqui
-// }
+  if (distancia1 < distancia2) {
+    return 'cat1';
+  } if (distancia2 < distancia1) {
+    return 'cat2';
+  } if (distancia2 === distancia1) {
+    return 'os gatos trombam e o rato foge';
+  }
+}
+
+catAndMouse(0, 3, 1);
 
 // // Desafio 8
 // function fizzBuzz() {
@@ -63,7 +72,7 @@ function highestCount(array) {
 
 module.exports = {
   calcArea,
-  // catAndMouse,
+  catAndMouse,
   compareTrue,
   concatName,
   // decode,
